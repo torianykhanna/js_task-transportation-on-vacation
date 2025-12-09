@@ -13,7 +13,9 @@ function calculateRentalCost(days) {
 
   if (days >= LONG_PERIOD) {
     price -= LONG_PERIOD_DISCOUNT;
-  } else if (days >= SHORT_PERIOD) {
+  }
+
+  if (days >= SHORT_PERIOD) {
     price -= SHORT_PERIOD_DISCOUNT;
   }
 
